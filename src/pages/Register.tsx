@@ -48,7 +48,7 @@ export function Register() {
           </AnimatedSection>
 
           <AnimatedSection direction="left" delay={0.2}>
-            <div className="bg-white p-10 md:p-12 rounded-3xl shadow-soft-lg border border-brand-accent/20">
+            <div className="bg-white p-6 sm:p-10 md:p-12 rounded-3xl shadow-soft-lg border border-brand-accent/20">
               {isSubmitted ?
               <motion.div
                 initial={{

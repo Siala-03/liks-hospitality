@@ -31,7 +31,7 @@ export function Contact() {
       <section className="pb-32 px-6 md:px-12 max-w-8xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <AnimatedSection>
-            <div className="bg-white p-10 md:p-12 rounded-3xl shadow-soft h-full">
+            <div className="bg-white p-6 sm:p-10 md:p-12 rounded-3xl shadow-soft h-full">
               <h2 className="font-display text-3xl text-brand-primary mb-8">
                 {isReview ? 'Share Your Experience' : 'Get in Touch'}
               </h2>

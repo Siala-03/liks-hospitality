@@ -60,7 +60,7 @@ export function FAQs() {
             <span className="font-button text-brand-accent tracking-widest uppercase text-sm mb-4 block">
               Support & Information
             </span>
-            <h1 className="font-display text-5xl md:text-6xl text-brand-bg leading-tight">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl text-brand-bg leading-tight">
               Frequently Asked{' '}
               <span className="italic font-serifAlt">Questions</span>
             </h1>

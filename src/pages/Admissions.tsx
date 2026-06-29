@@ -103,7 +103,7 @@ export function Admissions() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <div className="bg-white p-10 rounded-3xl shadow-soft h-full flex flex-col border border-brand-accent/20">
+            <div className="bg-white p-6 sm:p-10 rounded-3xl shadow-soft h-full flex flex-col border border-brand-accent/20">
               <div className="w-full h-48 rounded-2xl overflow-hidden shadow-soft mb-8 group relative">
                 <img
                   src="/customer service in action.jpg"

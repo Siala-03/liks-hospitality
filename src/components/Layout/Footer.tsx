@@ -9,7 +9,7 @@ export function Footer() {
       <div className="h-[2px] bg-gradient-to-r from-transparent via-brand-accent/40 to-transparent" />
 
       <div className="pt-20 pb-10">
-        <div className="max-w-8xl mx-auto px-6 md:px-12">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
             <div className="lg:col-span-1">
               <Link to="/" className="mb-6 block">

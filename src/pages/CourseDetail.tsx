@@ -53,7 +53,7 @@ export function CourseDetail() {
             transition={{
               duration: 0.8
             }}
-            className="font-display text-5xl md:text-7xl text-brand-primary leading-tight mb-4">
+            className="font-display text-4xl sm:text-5xl md:text-7xl text-brand-primary leading-tight mb-4">
             
             {course.title}
           </motion.h1>
