@@ -22,7 +22,7 @@ export function Contact() {
           <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
             Get in Touch
           </span>
-          <h1 className="font-display text-5xl md:text-7xl text-brand-primary leading-tight mb-8">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl text-brand-primary leading-tight mb-8">
             Contact <span className="italic font-serifAlt">Us</span>
           </h1>
         </motion.div>
@@ -266,7 +266,7 @@ export function Contact() {
         </div>
         <div className="relative z-10 text-center px-6">
           <AnimatedSection>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-bg mb-4">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-bg mb-4">
               We Look Forward to Welcoming You
             </h2>
             <p className="font-body text-lg text-brand-accent max-w-2xl mx-auto">

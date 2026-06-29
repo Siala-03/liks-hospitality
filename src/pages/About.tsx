@@ -16,7 +16,7 @@ export function About() {
           <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
             About LIKS
           </span>
-          <h1 className="font-display text-5xl md:text-7xl text-brand-primary leading-tight mb-8">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl text-brand-primary leading-tight mb-6 md:mb-8">
             A Legacy of Excellence <br />
             <span className="italic font-serifAlt">Begins Here</span>
           </h1>
@@ -82,7 +82,7 @@ export function About() {
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center py-8">
             <div className="w-16 h-[1px] bg-brand-secondary/50 mx-auto mb-10" />
-            <blockquote className="font-serifAlt italic text-2xl md:text-3xl lg:text-4xl text-brand-primary leading-relaxed mb-10">
+            <blockquote className="font-serifAlt italic text-xl sm:text-2xl md:text-3xl lg:text-4xl text-brand-primary leading-relaxed mb-10">
               "The key to great hospitality is not just what you do, but how you
               make people feel while you're doing it."
             </blockquote>
@@ -102,7 +102,7 @@ export function About() {
               <span className="font-button text-brand-accent tracking-widest uppercase text-sm mb-4 block">
                 Philosophy
               </span>
-              <h2 className="font-display text-4xl md:text-5xl mb-8">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-6 md:mb-8">
                 The LIKS{' '}
                 <span className="italic font-serifAlt">Philosophy</span>
               </h2>
@@ -172,7 +172,7 @@ export function About() {
             <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
               The Campus Vision
             </span>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-primary mb-8 leading-tight">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-primary mb-6 md:mb-8 leading-tight">
               An Environment <br />
               <span className="italic font-serifAlt">Built for Mastery</span>
             </h2>
@@ -210,7 +210,7 @@ export function About() {
         </div>
         <div className="relative z-10 text-center px-6">
           <AnimatedSection>
-            <h2 className="font-display text-4xl md:text-6xl text-brand-bg mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl text-brand-bg mb-6">
               Join the Vanguard
             </h2>
             <p className="font-body text-lg text-brand-accent max-w-2xl mx-auto">

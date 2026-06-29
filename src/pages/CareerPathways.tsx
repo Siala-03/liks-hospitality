@@ -24,7 +24,7 @@ export function CareerPathways() {
           <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
             Your Future
           </span>
-          <h1 className="font-display text-5xl md:text-7xl text-brand-primary leading-tight mb-8">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl text-brand-primary leading-tight mb-8">
             Global Career <br />
             <span className="italic font-serifAlt">Opportunities</span>
           </h1>
@@ -100,7 +100,7 @@ export function CareerPathways() {
               <span className="font-button text-brand-accent tracking-widest uppercase text-sm mb-4 block">
                 Internship & Placement
               </span>
-              <h2 className="font-display text-4xl md:text-5xl mb-6 leading-tight">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-6 leading-tight">
                 From Classroom to{' '}
                 <span className="italic font-serifAlt">Industry Floor</span>
               </h2>
@@ -248,7 +248,7 @@ export function CareerPathways() {
         </div>
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <AnimatedSection>
-            <h2 className="font-display text-4xl md:text-6xl text-brand-bg mb-6 leading-tight">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-6xl text-brand-bg mb-6 leading-tight">
               A World of Possibility
             </h2>
             <p className="font-body text-lg md:text-xl text-brand-accent mb-10 leading-relaxed">

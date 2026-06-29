@@ -12,7 +12,7 @@ export function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[90vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden">
+      <section className="relative h-[85vh] md:h-[90vh] min-h-[550px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/mixology.jpg"
@@ -37,7 +37,7 @@ export function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-8 max-w-5xl"
+            className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-6 md:mb-8 max-w-5xl px-2 sm:px-0"
           >
             Master the Art of{' '}
             <span className="italic font-serifAlt">Exceptional Service</span>
@@ -47,7 +47,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="font-body text-lg md:text-xl text-brand-bg/90 max-w-2xl mb-12 font-light leading-relaxed"
+            className="font-body text-base sm:text-lg md:text-xl text-brand-bg/90 max-w-2xl mb-8 md:mb-12 font-light leading-relaxed px-2 sm:px-0"
           >
             A premier academy dedicated to shaping the future leaders of the
             global luxury hospitality industry. Begin your journey toward
@@ -80,9 +80,9 @@ export function Home() {
       </section>
 
       {/* Statistics / Proof Band */}
-      <section className="bg-brand-primary py-14 md:py-16">
-        <div className="max-w-8xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 text-center">
+      <section className="bg-brand-primary py-10 md:py-16">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 text-center">
             {[
               { number: '7', label: 'Programmes' },
               { number: '95%', label: 'Job Placement After Graduation' },
@@ -91,7 +91,7 @@ export function Home() {
             ].map((stat, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1} direction="up">
                 <div className="text-brand-bg">
-                  <span className="font-display text-4xl md:text-5xl lg:text-6xl font-medium block mb-2">
+                  <span className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium block mb-1 md:mb-2">
                     {stat.number}
                   </span>
                   <span className="font-button text-xs md:text-sm tracking-widest uppercase text-brand-accent">
@@ -167,12 +167,12 @@ export function Home() {
       </section>
 
       {/* Pull-Quote Section */}
-      <section className="py-20 md:py-24 bg-brand-bg">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
+      <section className="py-16 md:py-24 bg-brand-bg">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-12 text-center">
           <AnimatedSection>
             <div className="py-12">
               <div className="w-16 h-[1px] bg-brand-secondary/50 mx-auto mb-10" />
-              <blockquote className="font-serifAlt italic text-2xl md:text-3xl lg:text-4xl text-brand-primary leading-relaxed mb-10">
+              <blockquote className="font-serifAlt italic text-xl sm:text-2xl md:text-3xl lg:text-4xl text-brand-primary leading-relaxed mb-10">
                 "Hospitality is almost impossible to teach. It's all about
                 hiring the right people, creating the right environment, and
                 letting them be themselves."
@@ -202,7 +202,7 @@ export function Home() {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {[
               {
                 icon: <Star className="w-8 h-8 mb-6 text-brand-accent" />,
@@ -228,7 +228,7 @@ export function Home() {
               <AnimatedSection
                 key={idx}
                 delay={idx * 0.2}
-                className="p-10 rounded-3xl bg-[#633632] border border-[#834d48] hover:bg-[#5a322f] transition-colors duration-500"
+                className="p-6 md:p-10 rounded-3xl bg-[#633632] border border-[#834d48] hover:bg-[#5a322f] transition-colors duration-500"
               >
                 {feature.icon}
                 <h3 className="font-display text-2xl mb-4">{feature.title}</h3>
@@ -264,7 +264,7 @@ export function Home() {
             </AnimatedSection>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {featuredCourses.map((course, idx) => (
               <AnimatedSection key={course.id} delay={idx * 0.2}>
                 <Link
@@ -293,11 +293,11 @@ export function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className="p-8 flex flex-col flex-grow">
-                      <h3 className="font-display text-2xl text-brand-primary mb-3 group-hover:text-brand-secondary transition-colors">
+                    <div className="p-5 sm:p-8 flex flex-col flex-grow">
+                      <h3 className="font-display text-xl sm:text-2xl text-brand-primary mb-2 sm:mb-3 group-hover:text-brand-secondary transition-colors">
                         {course.title}
                       </h3>
-                      <p className="font-body text-brand-ink/70 mb-6 flex-grow leading-relaxed">
+                      <p className="font-body text-brand-ink/70 mb-4 sm:mb-6 flex-grow leading-relaxed text-sm sm:text-base">
                         {course.shortDescription}
                       </p>
                       <div className="flex items-center text-brand-primary font-button text-sm font-medium">
@@ -317,7 +317,7 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/hospitality leadership.jpg"

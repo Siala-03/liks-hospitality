@@ -19,7 +19,7 @@ export function CoursesIndex() {
           <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
             Our Programmes
           </span>
-          <h1 className="font-display text-5xl md:text-7xl text-brand-primary leading-tight mb-6">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl text-brand-primary leading-tight mb-6">
             Master the Art of <br />
             <span className="italic font-serifAlt">Service</span>
           </h1>
@@ -32,7 +32,7 @@ export function CoursesIndex() {
 
       {/* Courses Grid */}
       <section className="pb-32 px-6 md:px-12 max-w-8xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {courses.map((course, idx) => (
             <AnimatedSection key={course.id} delay={idx * 0.1}>
               <Link
@@ -61,7 +61,7 @@ export function CoursesIndex() {
                       </p>
                     </div>
                   </div>
-                  <div className="p-8 flex flex-col flex-grow">
+                  <div className="p-5 sm:p-8 flex flex-col flex-grow">
                     <h3 className="font-display text-2xl text-brand-primary mb-3 group-hover:text-brand-secondary transition-colors">
                       {course.title}
                     </h3>

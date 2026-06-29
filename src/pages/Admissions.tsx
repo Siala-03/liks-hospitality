@@ -23,7 +23,7 @@ export function Admissions() {
           <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
             Admissions
           </span>
-          <h1 className="font-display text-5xl md:text-7xl text-brand-primary leading-tight mb-8">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl text-brand-primary leading-tight mb-8">
             Begin Your <br />
             <span className="italic font-serifAlt">Journey</span>
           </h1>
@@ -175,7 +175,7 @@ export function Admissions() {
         </div>
         <div className="relative z-10 text-center px-6">
           <AnimatedSection>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-bg mb-4">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-bg mb-4">
               Your Future Awaits
             </h2>
             <p className="font-body text-lg text-brand-accent max-w-2xl mx-auto">
