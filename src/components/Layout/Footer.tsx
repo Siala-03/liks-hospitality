@@ -13,7 +13,7 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
             <div className="lg:col-span-1">
               <Link to="/" className="mb-6 block">
-                <img src="/logo.png" alt="LIKS Hospitality Academy" className="h-14 w-auto brightness-0 invert" />
+                <img src="/logo.png" alt="LIKS Hospitality Academy" className="h-16 w-auto brightness-0 invert" />
               </Link>
               <p className="font-body text-brand-accent text-sm leading-relaxed mb-6 max-w-xs">
                 Elevating the art of hospitality in Rwanda. Shaping the future

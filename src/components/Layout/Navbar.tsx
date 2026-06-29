@@ -42,7 +42,7 @@ export function Navbar() {
     >
       <div className="max-w-8xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link to="/" className="z-50">
-          <img src="/logo.png" alt="LIKS Hospitality Academy" className="h-10 md:h-14 w-auto" />
+          <img src="/logo.png" alt="LIKS Hospitality Academy" className="h-12 md:h-16 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
