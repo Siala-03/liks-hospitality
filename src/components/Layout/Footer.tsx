@@ -112,6 +112,16 @@ export function Footer() {
                     +250 785 023 984
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://wa.me/250785023984"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    WhatsApp Us
+                  </a>
+                </li>
               </ul>
             </div>
 

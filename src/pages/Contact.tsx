@@ -131,9 +131,15 @@ export function Contact() {
                       </h4>
                       <a
                         href="tel:+250785023984"
-                        className="font-body text-brand-ink/70 hover:text-brand-primary transition-colors">
-
+                        className="font-body text-brand-ink/70 hover:text-brand-primary transition-colors block">
                         +250 785 023 984
+                      </a>
+                      <a
+                        href="https://wa.me/250785023984"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-body text-sm text-[#25D366] hover:text-[#128C7E] transition-colors mt-1 inline-block">
+                        Chat on WhatsApp
                       </a>
                     </div>
                   </div>
