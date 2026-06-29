@@ -30,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         style={{ width: `${scrollProgress}%` }}
       />
       <Navbar />
-      <main className="flex-grow pt-24">
+      <main className="flex-grow pt-28 md:pt-32">
         <AnimatePresence mode="wait">
           <motion.div
             key={pathname}

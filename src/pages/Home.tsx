@@ -23,7 +23,7 @@ export function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/80 via-transparent to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center mt-16">
+        <div className="relative z-10 max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center mt-20 md:mt-16">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
