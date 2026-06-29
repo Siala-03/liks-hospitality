@@ -4,11 +4,6 @@ import { ChevronDown } from 'lucide-react';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 const faqs = [
 {
-  question: 'When will the academy officially open its doors?',
-  answer:
-  'We are actively preparing our state-of-the-art facilities and refining our curriculum to ensure a world-class experience from day one. We strongly encourage you to register your interest to receive exclusive updates regarding programme schedules and the timeline for our next intake.'
-},
-{
   question: 'Is prior hospitality experience required to enroll?',
   answer:
   'For our foundational programmes, prior experience is not strictly required—what we seek is an undeniable passion for service and a commitment to excellence. However, advanced programmes, such as Hospitality Leadership, do require previous industry experience or relevant academic qualifications to ensure the cohort can engage with complex strategic material.'

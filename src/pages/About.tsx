@@ -135,16 +135,16 @@ export function About() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-2xl shadow-soft group relative">
                   <img
-                    src="https://images.unsplash.com/photo-1610851467843-fe4a65aea9c0?q=80&w=2070&auto=format&fit=crop"
-                    alt="Exquisite culinary detail and plating"
+                    src="/coffee prep.jpg"
+                    alt="LIKS barista preparing specialty coffee"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-brand-ink/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
                 <div className="overflow-hidden rounded-2xl shadow-soft mt-8 group relative">
                   <img
-                    src="https://images.unsplash.com/photo-1740512376474-f34f5c8d542a?q=80&w=2070&auto=format&fit=crop"
-                    alt="Refined service detail in a premium setting"
+                    src="/cafe service.jpg"
+                    alt="LIKS café service training in action"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-brand-ink/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
@@ -161,8 +161,8 @@ export function About() {
           <AnimatedSection direction="right">
             <div className="w-full h-[70vh] rounded-3xl overflow-hidden shadow-soft-lg group relative">
               <img
-                src="https://plus.unsplash.com/premium_photo-1703435536977-a496234479e0?q=80&w=2070&auto=format&fit=crop"
-                alt="A sophisticated dining room prepared for evening service"
+                src="/operations resto manager.jpg"
+                alt="LIKS restaurant operations management training"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
@@ -202,7 +202,7 @@ export function About() {
       <section className="relative h-[50vh] min-h-[400px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1687986261123-b17f08f2796c?q=80&w=2070&auto=format&fit=crop"
+            src="/rwanda city.jpg"
             alt="Elegant architectural details of a luxury hotel"
             className="w-full h-full object-cover"
           />
