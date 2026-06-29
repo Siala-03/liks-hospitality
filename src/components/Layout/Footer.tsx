@@ -98,10 +98,10 @@ export function Footer() {
                 <li>East Africa</li>
                 <li className="pt-2">
                   <a
-                    href="mailto:admissions@liks.rw"
+                    href="mailto:admissions@likshospitality.com"
                     className="hover:text-white transition-colors"
                   >
-                    admissions@liks.rw
+                    admissions@likshospitality.com
                   </a>
                 </li>
                 <li>

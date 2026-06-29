@@ -114,10 +114,10 @@ export function Contact() {
                         Email
                       </h4>
                       <a
-                        href="mailto:admissions@liks.rw"
+                        href="mailto:admissions@likshospitality.com"
                         className="font-body text-brand-ink/70 hover:text-brand-primary transition-colors">
                         
-                        admissions@liks.rw
+                        admissions@likshospitality.com
                       </a>
                     </div>
                   </div>
