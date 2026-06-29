@@ -40,7 +40,7 @@ export function CareerPathways() {
         <AnimatedSection>
           <div className="w-full h-[50vh] rounded-3xl overflow-hidden shadow-soft-lg mb-24 relative group">
             <img
-              src="/board meeting.png"
+              src="/board meeting.jpg"
               alt="LIKS hospitality industry board meeting and strategic planning"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
 
@@ -60,7 +60,7 @@ export function CareerPathways() {
             title: 'Culinary & Beverage Arts',
             desc: 'Shape the global dining landscape. Lead as a Head Sommelier, Executive Mixologist, or Food & Beverage Director in Michelin-starred environments and premium establishments where taste meets artistry.',
             image:
-            '/class mixology.png'
+            '/class mixology.jpg'
           },
           {
             title: 'Hospitality Entrepreneurship',

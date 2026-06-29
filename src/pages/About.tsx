@@ -28,7 +28,7 @@ export function About() {
         <AnimatedSection>
           <div className="w-full h-[60vh] rounded-3xl overflow-hidden shadow-soft-lg group">
             <img
-              src="/customer service class.png"
+              src="/customer service class.jpg"
               alt="LIKS hospitality students in a customer service training class"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />

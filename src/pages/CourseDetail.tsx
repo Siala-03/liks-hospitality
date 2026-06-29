@@ -136,7 +136,7 @@ export function CourseDetail() {
                 </div>
                 <div className="h-48 rounded-2xl overflow-hidden shadow-soft group relative">
                   <img
-                    src="/class mixology.png"
+                    src="/class mixology.jpg"
                     alt="Detail of hospitality craft"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />

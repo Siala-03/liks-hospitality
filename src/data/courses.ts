@@ -35,7 +35,7 @@ export const courses = [
   shortDescription:
   'Design, build, and manage thriving café environments with operational precision and authentic warmth.',
   image:
-  '/cafe service.png',
+  '/cafe service.jpg',
   overview:
   'As global café culture continues its rapid, sophisticated expansion, the demand for exceptional operators has never been higher. This programme equips you with the nuanced operational knowledge, customer service finesse, and sharp business acumen needed to run a successful, high-volume café. We focus on the delicate balance between maintaining artisanal quality and achieving commercial scalability.',
   duration: '8 Weeks',
@@ -62,7 +62,7 @@ export const courses = [
   shortDescription:
   'Elevate coffee preparation from a daily routine to an exacting, sensory art form.',
   image:
-  '/coffee prep.png',
+  '/coffee prep.jpg',
   overview:
   'The Professional Barista programme is an immersive journey into the science, history, and art of coffee. From understanding the terroir of global bean provenance to mastering the micro-adjustments of espresso extraction and advanced latte art, this course is designed for purists who wish to achieve absolute mastery behind the espresso machine.',
   duration: '6 Weeks',
@@ -89,7 +89,7 @@ export const courses = [
   shortDescription:
   'Craft exceptional beverages and curate unforgettable, sophisticated bar experiences.',
   image:
-  '/mixology.png',
+  '/mixology.jpg',
   overview:
   'Step into the refined and dynamic world of premium mixology. This programme seamlessly blends the rich history of classic cocktails with avant-garde modern techniques. You will learn the architecture of flavor, the psychology of the bar environment, and how to deliver charismatic, intuitive service that turns first-time guests into loyal patrons.',
   duration: '8 Weeks',

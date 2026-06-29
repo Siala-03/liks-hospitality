@@ -42,7 +42,7 @@ export function FAQs() {
       <section className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/rwanda city.png"
+            src="/rwanda city.jpg"
             alt="A luxurious hotel lobby"
             className="w-full h-full object-cover" />
           
@@ -79,7 +79,7 @@ export function FAQs() {
             <AnimatedSection>
               <div className="w-full h-[60vh] rounded-3xl overflow-hidden shadow-soft-lg group sticky top-32 relative">
                 <img
-                  src="/customer service in action.png"
+                  src="/customer service in action.jpg"
                   alt="A professional concierge assisting a guest"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />

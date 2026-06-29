@@ -49,28 +49,28 @@ export function Admissions() {
                 title: 'Register Interest',
                 desc: 'Submit your details to join our exclusive prospective student list. You will receive priority updates regarding our upcoming intake and curriculum details.',
                 image:
-                '/step 1.png'
+                '/step 1.jpg'
               },
               {
                 step: '02',
                 title: 'Formal Application',
                 desc: 'Upon the opening of our admissions window, you will be invited to submit a comprehensive application detailing your background, ambitions, and alignment with our values.',
                 image:
-                '/step 2.png'
+                '/step 2.jpg'
               },
               {
                 step: '03',
                 title: 'Personal Interview',
                 desc: 'Shortlisted candidates will be invited for a rigorous personal interview with our faculty to discuss their passion for luxury hospitality and long-term career trajectory.',
                 image:
-                '/step 3.png'
+                '/step 3.jpg'
               },
               {
                 step: '04',
                 title: 'Offer & Enrollment',
                 desc: 'Successful applicants will receive a formal offer of admission to join LIKS Hospitality Academy, marking the beginning of their professional transformation.',
                 image:
-                '/step 4.png'
+                '/step 4.jpg'
               }].
               map((item, idx) =>
               <div
@@ -106,7 +106,7 @@ export function Admissions() {
             <div className="bg-white p-10 rounded-3xl shadow-soft h-full flex flex-col border border-brand-accent/20">
               <div className="w-full h-48 rounded-2xl overflow-hidden shadow-soft mb-8 group relative">
                 <img
-                  src="/customer service in action.png"
+                  src="/customer service in action.jpg"
                   alt="LIKS hospitality students in customer service training"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
@@ -167,7 +167,7 @@ export function Admissions() {
       <section className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden mt-16">
         <div className="absolute inset-0 z-0">
           <img
-            src="/cafe service.png"
+            src="/cafe service.jpg"
             alt="LIKS café service training in action"
             className="w-full h-full object-cover" />
           

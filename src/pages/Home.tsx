@@ -15,7 +15,7 @@ export function Home() {
       <section className="relative h-[90vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/mixology.png"
+            src="/mixology.jpg"
             alt="LIKS mixology and bartending training in action"
             className="w-full h-full object-cover"
           />
@@ -111,7 +111,7 @@ export function Home() {
             <AnimatedSection direction="right">
               <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-soft-lg group">
                 <img
-                  src="/customer service in action.png"
+                  src="/customer service in action.jpg"
                   alt="LIKS hospitality students demonstrating customer service excellence"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
@@ -320,7 +320,7 @@ export function Home() {
       <section className="py-32 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/hospitality leadership.png"
+            src="/hospitality leadership.jpg"
             alt="LIKS hospitality leadership and professional training"
             className="w-full h-full object-cover"
           />

@@ -142,7 +142,7 @@ export function Contact() {
 
               <div className="w-full h-64 rounded-3xl overflow-hidden shadow-soft-lg group relative">
                 <img
-                  src="/class discussion.png"
+                  src="/class discussion.jpg"
                   alt="LIKS hospitality class discussion"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                 <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
@@ -156,7 +156,7 @@ export function Contact() {
       <section className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden mt-16">
         <div className="absolute inset-0 z-0">
           <img
-            src="/operations resto manager.png"
+            src="/operations resto manager.jpg"
             alt="LIKS restaurant operations training"
             className="w-full h-full object-cover" />
           

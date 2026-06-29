@@ -31,14 +31,14 @@ export function Register() {
               <div className="grid grid-cols-2 gap-4 mt-12 hidden lg:grid">
                 <div className="relative h-64 rounded-3xl overflow-hidden shadow-soft-lg group">
                   <img
-                    src="/operations resto manager.png"
+                    src="/operations resto manager.jpg"
                     alt="LIKS restaurant operations manager in training"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
                 <div className="relative h-64 rounded-3xl overflow-hidden shadow-soft-lg group mt-8">
                   <img
-                    src="/Cafe:late making.png"
+                    src="/Cafe:late making.jpg"
                     alt="LIKS barista crafting a café latte"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
