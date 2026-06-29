@@ -35,9 +35,25 @@ export function Contact() {
           <AnimatedSection>
             <div className="bg-white p-10 md:p-12 rounded-3xl shadow-soft h-full">
               <h2 className="font-display text-3xl text-brand-primary mb-8">
-                Send an Inquiry
+                Get in Touch
               </h2>
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <div className="space-y-2">
+                  <label className="font-button text-sm text-brand-ink/80">
+                    I'd like to *
+                  </label>
+                  <select
+                    required
+                    className="w-full bg-brand-bg border border-brand-accent/50 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary transition-colors appearance-none"
+                  >
+                    <option value="">Select a reason</option>
+                    <option value="general">Make a General Inquiry</option>
+                    <option value="programmes">Ask About Programmes</option>
+                    <option value="admissions">Ask About Admissions</option>
+                    <option value="partnerships">Discuss Partnerships</option>
+                    <option value="review">Leave a Review</option>
+                  </select>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="font-button text-sm text-brand-ink/80">
@@ -46,7 +62,7 @@ export function Contact() {
                     <input
                       type="text"
                       className="w-full bg-brand-bg border border-brand-accent/50 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary transition-colors" />
-                    
+
                   </div>
                   <div className="space-y-2">
                     <label className="font-button text-sm text-brand-ink/80">
@@ -55,7 +71,7 @@ export function Contact() {
                     <input
                       type="text"
                       className="w-full bg-brand-bg border border-brand-accent/50 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary transition-colors" />
-                    
+
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -65,7 +81,7 @@ export function Contact() {
                   <input
                     type="email"
                     className="w-full bg-brand-bg border border-brand-accent/50 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary transition-colors" />
-                  
+
                 </div>
                 <div className="space-y-2">
                   <label className="font-button text-sm text-brand-ink/80">
