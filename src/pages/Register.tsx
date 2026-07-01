@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
 import { courses } from '../data/courses';
+import { useSEO } from '../hooks/useSEO';
 export function Register() {
+  useSEO({
+    title: 'Register Your Interest | LIKS Hospitality Academy — Kigali',
+    description: 'Secure your place at LIKS Hospitality Academy in Kigali, Rwanda. Register your interest for our next intake and start your journey in world-class luxury hospitality.',
+    canonicalPath: '/register',
+  });
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,14 +40,16 @@ export function Register() {
                   <img
                     src="/operations resto manager.jpg"
                     alt="LIKS restaurant operations manager in training"
-                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    loading="lazy" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
                 <div className="relative h-64 rounded-3xl overflow-hidden shadow-soft-lg group mt-8">
                   <img
                     src="/Cafe:late making.jpg"
                     alt="LIKS barista crafting a café latte"
-                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    loading="lazy" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
               </div>

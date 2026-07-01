@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
+import { useSEO } from '../hooks/useSEO';
 const faqs = [
 {
   question: 'Is prior hospitality experience required to enroll?',
@@ -30,6 +31,12 @@ const faqs = [
 }];
 
 export function FAQs() {
+  useSEO({
+    title: 'Frequently Asked Questions | LIKS Hospitality Academy — Kigali',
+    description: 'Get answers to common questions about LIKS Hospitality Academy: programmes, admissions requirements, certifications, English instruction, and job placement in Kigali, Rwanda.',
+    canonicalPath: '/faqs',
+  });
+
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
     <div className="w-full bg-brand-bg min-h-screen">
@@ -38,7 +45,7 @@ export function FAQs() {
         <div className="absolute inset-0 z-0">
           <img
             src="/rwanda city.jpg"
-            alt="A luxurious hotel lobby"
+            alt="Kigali city skyline, Rwanda — home of LIKS Hospitality Academy"
             className="w-full h-full object-cover" />
           
           <div className="absolute inset-0 bg-brand-ink/60 mix-blend-multiply" />
@@ -75,8 +82,9 @@ export function FAQs() {
               <div className="w-full h-[60vh] rounded-3xl overflow-hidden shadow-soft-lg group sticky top-32 relative">
                 <img
                   src="/customer service in action.jpg"
-                  alt="A professional concierge assisting a guest"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                  alt="LIKS student practicing customer service excellence"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                loading="lazy" />
                 <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
               </div>
             </AnimatedSection>

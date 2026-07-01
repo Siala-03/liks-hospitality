@@ -52,6 +52,7 @@ export function CoursesIndex() {
                       src={course.image}
                       alt={course.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
                     />
                     <div className="absolute inset-0 bg-brand-ink/10 group-hover:bg-transparent transition-colors duration-500" />
                     {/* Category label */}

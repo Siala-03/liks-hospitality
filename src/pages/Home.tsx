@@ -25,6 +25,7 @@ export function Home() {
             src="/mixology.jpg"
             alt="LIKS mixology and bartending training in action"
             className="w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-brand-ink/40 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/80 via-transparent to-transparent" />
@@ -121,6 +122,7 @@ export function Home() {
                   src="/customer service in action.jpg"
                   alt="LIKS hospitality students demonstrating customer service excellence"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
               </div>
@@ -284,6 +286,7 @@ export function Home() {
                         src={course.image}
                         alt={course.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
                       />
                       <div className="absolute inset-0 bg-brand-ink/10 group-hover:bg-transparent transition-colors duration-500" />
                       {/* Category label */}
@@ -330,6 +333,7 @@ export function Home() {
             src="/hospitality leadership.jpg"
             alt="LIKS hospitality leadership and professional training"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-brand-primary/95 mix-blend-multiply" />
         </div>

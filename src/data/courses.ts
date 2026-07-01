@@ -7,7 +7,7 @@ export const courses = [
   shortDescription:
   'Master the intricate choreography and business acumen required to lead world-class dining establishments.',
   image:
-  'https://plus.unsplash.com/premium_photo-1703435536977-a496234479e0?q=80&w=2070&auto=format&fit=crop',
+  'https://plus.unsplash.com/premium_photo-1703435536977-a496234479e0?q=80&w=800&auto=format&fit=crop&q=75',
   overview:
   'The Restaurant Operations programme is meticulously designed to cultivate the next generation of visionary dining leaders. This comprehensive course transcends basic management, delving into the psychology of guest relations, the choreography of flawless floor service, and the rigorous financial oversight required in premium dining environments. Students will learn to orchestrate unforgettable dining experiences while maintaining uncompromising operational excellence.',
   duration: '12 Weeks',
@@ -116,7 +116,7 @@ export const courses = [
   shortDescription:
   'Master the meticulous details of flawless service in luxury hospitality settings.',
   image:
-  'https://images.unsplash.com/photo-1709837167686-a2e33aad1bf0?q=80&w=2070&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1709837167686-a2e33aad1bf0?q=80&w=800&auto=format&fit=crop&q=75',
   overview:
   'The foundation of any globally celebrated dining experience is impeccable, invisible service. This course focuses on the meticulous details of food and beverage presentation, the nuances of table etiquette, and the art of anticipating guest needs before they are articulated. We train professionals to move with grace and speak with authority.',
   duration: '10 Weeks',
@@ -143,7 +143,7 @@ export const courses = [
   shortDescription:
   'Shape the future of the global service industry through visionary, empathetic management.',
   image:
-  'https://plus.unsplash.com/premium_photo-1677553953699-e62954777d8f?q=80&w=2086&auto=format&fit=crop',
+  'https://plus.unsplash.com/premium_photo-1677553953699-e62954777d8f?q=80&w=800&auto=format&fit=crop&q=75',
   overview:
   'Designed exclusively for ambitious future executives, this programme focuses on the strategic, financial, and human elements of running a world-class hospitality brand. Learn to inspire diverse teams, drive sustainable profitability, and maintain uncompromising brand excellence in a rapidly evolving global market.',
   duration: '16 Weeks',
@@ -170,7 +170,7 @@ export const courses = [
   shortDescription:
   'Transform your visionary hospitality concept into a thriving, scalable business reality.',
   image:
-  'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2070&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop&q=75',
   overview:
   'For the innovators, disruptors, and creators. This intensive course guides you through the complex lifecycle of conceptualizing, funding, launching, and scaling a hospitality venture. From boutique hotels to avant-garde dining concepts, learn how to navigate the competitive landscape and build a brand that resonates globally.',
   duration: '14 Weeks',

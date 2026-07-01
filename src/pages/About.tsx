@@ -38,6 +38,7 @@ export function About() {
               src="/customer service class.jpg"
               alt="LIKS hospitality students in a customer service training class"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
           </div>
@@ -145,6 +146,7 @@ export function About() {
                     src="/coffee prep.jpg"
                     alt="LIKS barista preparing specialty coffee"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
                   />
                   <div className="absolute inset-0 bg-brand-ink/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
@@ -153,6 +155,7 @@ export function About() {
                     src="/cafe service.jpg"
                     alt="LIKS café service training in action"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
                   />
                   <div className="absolute inset-0 bg-brand-ink/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
@@ -171,6 +174,7 @@ export function About() {
                 src="/operations resto manager.jpg"
                 alt="LIKS restaurant operations management training"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+              loading="lazy"
               />
               <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
             </div>

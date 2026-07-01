@@ -3,8 +3,15 @@ import { motion } from 'framer-motion';
 import { MapPin, Mail, Phone, Star } from 'lucide-react';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
+import { useSEO } from '../hooks/useSEO';
 
 export function Contact() {
+  useSEO({
+    title: 'Contact LIKS Hospitality Academy | Kigali, Rwanda',
+    description: 'Get in touch with LIKS Hospitality Academy in Kigali, Rwanda. Ask about our programmes, admissions, partnerships, or leave a review. Call, email, or WhatsApp us.',
+    canonicalPath: '/contact',
+  });
+
   const [formType, setFormType] = useState('');
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
@@ -246,6 +253,7 @@ export function Contact() {
                   src="/class discussion.jpg"
                   alt="LIKS hospitality class discussion"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
               </div>

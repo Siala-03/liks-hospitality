@@ -36,7 +36,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-brand-bg/90 backdrop-blur-md shadow-sm py-4'
+          ? 'bg-brand-primary/95 backdrop-blur-md shadow-sm py-4'
           : 'bg-transparent py-6'
       }`}
     >
@@ -46,7 +46,7 @@ export function Navbar() {
             src="/logo.png"
             alt="LIKS Hospitality Academy"
             className={`w-auto transition-all duration-500 ${
-              isScrolled ? 'h-12 md:h-14 brightness-0' : 'h-16 md:h-20'
+              isScrolled ? 'h-12 md:h-14' : 'h-16 md:h-20'
             }`}
           />
         </Link>
@@ -58,35 +58,48 @@ export function Navbar() {
               key={link.name}
               to={link.path}
               className={`font-button text-sm font-medium transition-colors relative py-1 ${
-                isActive(link.path)
-                  ? 'text-brand-primary'
-                  : 'text-brand-ink/80 hover:text-brand-primary'
+                isScrolled
+                  ? isActive(link.path)
+                    ? 'text-brand-bg'
+                    : 'text-brand-accent hover:text-brand-bg'
+                  : isActive(link.path)
+                  ? 'text-brand-bg'
+                  : 'text-brand-bg/80 hover:text-brand-bg'
               }`}
             >
               {link.name}
               {isActive(link.path) ? (
                 <motion.span
                   layoutId="nav-underline"
-                  className="absolute -bottom-1 left-0 right-0 h-[2px] bg-brand-primary rounded-full"
+                  className="absolute -bottom-1 left-0 right-0 h-[2px] bg-brand-bg rounded-full"
                   transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                 />
               ) : (
-                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-primary transition-all duration-300 hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-bg transition-all duration-300 hover:w-full" />
               )}
             </Link>
           ))}
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <Button variant="ghost" href="/contact">
+          <Button
+            variant="ghost"
+            href="/contact"
+            className={isScrolled ? 'text-brand-accent hover:text-brand-bg' : 'text-brand-bg/80 hover:text-brand-bg'}
+          >
             Contact
           </Button>
-          <Button href="/register">Register Interest</Button>
+          <Button
+            href="/register"
+            className={isScrolled ? 'bg-brand-bg text-brand-primary hover:bg-brand-accent' : ''}
+          >
+            Register Interest
+          </Button>
         </div>
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden z-50 text-brand-primary"
+          className="lg:hidden z-50 text-brand-bg"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}

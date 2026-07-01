@@ -49,7 +49,8 @@ export function CareerPathways() {
             <img
               src="/board meeting.jpg"
               alt="LIKS hospitality industry board meeting and strategic planning"
-              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              loading="lazy" />
 
             <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
           </div>
@@ -61,7 +62,7 @@ export function CareerPathways() {
             title: 'Luxury Hotel Management',
             desc: 'Command operations in world-renowned hotels, exclusive resorts, and private estates. Roles include General Manager, Director of Rooms, and Guest Experience Director, where you will dictate the standard of international luxury.',
             image:
-            'https://plus.unsplash.com/premium_photo-1677553953699-e62954777d8f?q=80&w=2086&auto=format&fit=crop'
+            'https://plus.unsplash.com/premium_photo-1677553953699-e62954777d8f?q=80&w=800&auto=format&fit=crop&q=75'
           },
           {
             title: 'Culinary & Beverage Arts',
@@ -73,7 +74,7 @@ export function CareerPathways() {
             title: 'Hospitality Entrepreneurship',
             desc: 'Create your own legacy. Armed with operational mastery and business acumen, launch boutique hotels, innovative dining concepts, or specialized hospitality consultancy firms that disrupt the market.',
             image:
-            'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2070&auto=format&fit=crop'
+            'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=800&auto=format&fit=crop&q=75'
           }].
           map((path, idx) =>
           <AnimatedSection key={idx} delay={idx * 0.2}>
@@ -82,7 +83,8 @@ export function CareerPathways() {
                   <img
                   src={path.image}
                   alt={path.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
                 <div className="p-10 flex-grow flex flex-col">
@@ -247,7 +249,7 @@ export function CareerPathways() {
       <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1709837167686-a2e33aad1bf0?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1709837167686-a2e33aad1bf0?q=80&w=800&auto=format&fit=crop&q=75"
             alt="Impeccable fine dining service"
             className="w-full h-full object-cover" />
           

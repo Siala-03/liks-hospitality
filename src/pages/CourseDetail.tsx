@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -12,11 +12,44 @@ import {
 import { courses } from '../data/courses';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
+import { useSEO } from '../hooks/useSEO';
 export function CourseDetail() {
   const { slug } = useParams<{
     slug: string;
   }>();
   const course = courses.find((c) => c.slug === slug);
+
+  useSEO({
+    title: course ? `${course.title} | LIKS Hospitality Academy — Kigali` : 'Programme | LIKS Hospitality Academy',
+    description: course ? `${course.shortDescription} ${course.duration} programme at LIKS Hospitality Academy, Kigali. ${course.certification}.` : '',
+    canonicalPath: course ? `/courses/${course.slug}` : '/courses',
+  });
+
+  useEffect(() => {
+    if (!course) return;
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'course-jsonld';
+    script.text = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: course.title,
+      description: course.overview,
+      url: `https://liks.rw/courses/${course.slug}`,
+      timeRequired: course.duration,
+      educationalCredentialAwarded: course.certification,
+      coursePrerequisites: course.entryRequirements,
+      provider: {
+        '@type': 'EducationalOrganization',
+        name: 'LIKS Hospitality Academy',
+        url: 'https://liks.rw',
+        address: { '@type': 'PostalAddress', addressLocality: 'Kigali', addressCountry: 'RW' },
+      },
+    });
+    document.head.appendChild(script);
+    return () => { document.getElementById('course-jsonld')?.remove(); };
+  }, [course]);
+
   if (!course) {
     return <Navigate to="/courses" replace />;
   }
@@ -28,7 +61,9 @@ export function CourseDetail() {
           <img
             src={course.image}
             alt={course.title}
-            className="w-full h-full object-cover" />
+            className="w-full h-full object-cover"
+            fetchPriority="high"
+          />
           
           <div className="absolute inset-0 bg-brand-ink/50 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-brand-bg/20 to-transparent" />
@@ -129,23 +164,26 @@ export function CourseDetail() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="col-span-2 h-64 rounded-2xl overflow-hidden shadow-soft group relative">
                   <img
-                    src="https://images.unsplash.com/photo-1663530761401-15eefb544889?q=80&w=2074&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1663530761401-15eefb544889?q=80&w=800&auto=format&fit=crop&q=75"
                     alt="Practical training in action"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
                 <div className="h-48 rounded-2xl overflow-hidden shadow-soft group relative">
                   <img
                     src="/class mixology.jpg"
                     alt="Detail of hospitality craft"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
                 <div className="h-48 rounded-2xl overflow-hidden shadow-soft group relative">
                   <img
-                    src="https://images.unsplash.com/photo-1709837167686-a2e33aad1bf0?q=80&w=2070&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1709837167686-a2e33aad1bf0?q=80&w=800&auto=format&fit=crop&q=75"
                     alt="Students mastering service"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy" />
                   <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-0" />
                 </div>
               </div>
