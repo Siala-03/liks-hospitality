@@ -5,8 +5,15 @@ import { ArrowRight, ChevronRight, Star, Globe, BookOpen, Briefcase } from 'luci
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
 import { courses } from '../data/courses';
+import { useSEO } from '../hooks/useSEO';
 
 export function Home() {
+  useSEO({
+    title: 'LIKS Hospitality Academy — Master the Art of Exceptional Service | Kigali, Rwanda',
+    description: 'LIKS Hospitality Academy in Kigali, Rwanda offers world-class training in restaurant operations, barista skills, mixology, food & beverage service, and hospitality leadership. 95% job placement rate.',
+    canonicalPath: '/',
+  });
+
   const featuredCourses = courses.slice(0, 3);
 
   return (

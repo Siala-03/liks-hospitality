@@ -4,8 +4,15 @@ import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { courses } from '../data/courses';
+import { useSEO } from '../hooks/useSEO';
 
 export function CoursesIndex() {
+  useSEO({
+    title: 'Hospitality Training Programmes | LIKS Academy — Kigali, Rwanda',
+    description: 'Explore 7 world-class hospitality programmes at LIKS Academy: restaurant operations, professional barista, mixology, café operations, food & beverage service, and hospitality leadership.',
+    canonicalPath: '/courses',
+  });
+
   return (
     <div className="w-full bg-brand-bg min-h-screen">
       {/* Page Header */}

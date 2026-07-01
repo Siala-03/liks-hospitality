@@ -1,8 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
+import { useSEO } from '../hooks/useSEO';
 
 export function About() {
+  useSEO({
+    title: 'About LIKS | Premier Hospitality Training Academy in Kigali, Rwanda',
+    description: "Learn about LIKS Hospitality Academy's mission to establish Rwanda as East Africa's premier hub for luxury hospitality excellence. Discover our philosophy and teaching approach.",
+    canonicalPath: '/about',
+  });
+
   return (
     <div className="w-full bg-brand-bg">
       {/* Page Header */}

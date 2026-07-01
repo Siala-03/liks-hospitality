@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 import { Handshake, Building2, UtensilsCrossed, Coffee, Hotel } from 'lucide-react';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
+import { useSEO } from '../hooks/useSEO';
 export function CareerPathways() {
+  useSEO({
+    title: 'Hospitality Career Pathways | LIKS Academy — Kigali, Rwanda',
+    description: 'Discover the career opportunities open to LIKS graduates: hotel management, restaurant operations, specialty coffee, luxury mixology, café ownership, and more across East Africa and globally.',
+    canonicalPath: '/career-pathways',
+  });
+
   return (
     <div className="w-full bg-brand-bg">
       <section className="pt-32 pb-20 px-6 md:px-12 max-w-8xl mx-auto">

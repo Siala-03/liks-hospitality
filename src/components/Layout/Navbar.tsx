@@ -46,7 +46,7 @@ export function Navbar() {
             src="/logo.png"
             alt="LIKS Hospitality Academy"
             className={`w-auto transition-all duration-500 ${
-              isScrolled ? 'h-12 md:h-14' : 'h-16 md:h-20'
+              isScrolled ? 'h-12 md:h-14 brightness-0' : 'h-16 md:h-20'
             }`}
           />
         </Link>

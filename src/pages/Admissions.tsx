@@ -2,7 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
+import { useSEO } from '../hooks/useSEO';
 export function Admissions() {
+  useSEO({
+    title: 'Admissions | How to Apply to LIKS Hospitality Academy — Kigali',
+    description: 'Ready to begin your hospitality career? Learn how to apply to LIKS Hospitality Academy in Kigali, Rwanda. Entry requirements, intake dates, and step-by-step application process.',
+    canonicalPath: '/admissions',
+  });
+
   return (
     <div className="w-full bg-brand-bg">
       <section className="pt-32 pb-20 px-6 md:px-12 max-w-8xl mx-auto">
