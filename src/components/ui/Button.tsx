@@ -17,7 +17,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-  'inline-flex items-center justify-center font-button transition-all duration-300 ease-out-expo rounded-full';
+  'inline-flex items-center justify-center font-button transition-all duration-300 ease-out-expo rounded-full disabled:opacity-60 disabled:cursor-not-allowed';
   const variants = {
     primary:
     'bg-brand-primary text-brand-bg hover:bg-[#5a322f] hover:shadow-soft',
