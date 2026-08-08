@@ -19,7 +19,7 @@ export function Home() {
   return (
     <div className="w-full -mt-28 md:-mt-32">
       {/* Hero Section */}
-      <section className="relative h-[85vh] md:h-[90vh] min-h-[550px] w-full flex items-center justify-center overflow-hidden">
+      <section className="relative h-[85vh] md:h-[90vh] min-h-[550px] w-full flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/mixology.jpg"
@@ -28,10 +28,10 @@ export function Home() {
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-brand-ink/40 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/80 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/90 via-brand-ink/20 to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center mt-20 md:mt-16">
+        <div className="relative z-10 w-full max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center pb-16 md:pb-24">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
