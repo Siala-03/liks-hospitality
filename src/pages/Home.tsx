@@ -168,21 +168,19 @@ export function Home() {
       </section>
 
       {/* Pull-Quote Section */}
-      <section className="py-10 md:py-14 bg-brand-bg">
+      <section className="py-8 md:py-10 bg-brand-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-12 text-center">
           <AnimatedSection>
-            <div className="py-12">
-              <div className="w-16 h-[1px] bg-brand-secondary/50 mx-auto mb-10" />
-              <blockquote className="font-serifAlt italic text-xl sm:text-2xl md:text-3xl lg:text-4xl text-brand-primary leading-relaxed mb-10">
-                "Hospitality is almost impossible to teach. It's all about
-                hiring the right people, creating the right environment, and
-                letting them be themselves."
-              </blockquote>
-              <p className="font-button text-sm tracking-widest uppercase text-brand-secondary">
-                — Danny Meyer
-              </p>
-              <div className="w-16 h-[1px] bg-brand-secondary/50 mx-auto mt-10" />
-            </div>
+            <div className="w-16 h-[1px] bg-brand-secondary/50 mx-auto mb-6" />
+            <blockquote className="font-serifAlt italic text-xl sm:text-2xl md:text-3xl text-brand-primary leading-relaxed mb-5">
+              "Hospitality is almost impossible to teach. It's all about
+              hiring the right people, creating the right environment, and
+              letting them be themselves."
+            </blockquote>
+            <p className="font-button text-sm tracking-widest uppercase text-brand-secondary mb-6">
+              — Danny Meyer
+            </p>
+            <div className="w-16 h-[1px] bg-brand-secondary/50 mx-auto" />
           </AnimatedSection>
         </div>
       </section>
