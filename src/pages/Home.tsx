@@ -105,7 +105,7 @@ export function Home() {
       </section>
 
       {/* Why Hospitality / Vision */}
-      <section className="py-24 md:py-32 bg-brand-bg">
+      <section className="py-16 md:py-20 bg-brand-bg">
         <div className="max-w-8xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="right">
@@ -168,7 +168,7 @@ export function Home() {
       </section>
 
       {/* Pull-Quote Section */}
-      <section className="py-16 md:py-24 bg-brand-bg">
+      <section className="py-10 md:py-14 bg-brand-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-12 text-center">
           <AnimatedSection>
             <div className="py-12">
@@ -188,7 +188,7 @@ export function Home() {
       </section>
 
       {/* Why Choose Us Features */}
-      <section className="py-24 bg-brand-primary text-brand-bg">
+      <section className="py-16 md:py-20 bg-brand-primary text-brand-bg">
         <div className="max-w-8xl mx-auto px-6 md:px-12">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-20">
             <span className="font-button text-brand-accent tracking-widest uppercase text-sm mb-4 block">
