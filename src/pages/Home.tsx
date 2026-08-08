@@ -37,7 +37,7 @@ export function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-4 md:mb-6 max-w-5xl"
+            className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight mb-3 md:mb-4 max-w-3xl"
           >
             The Art of{' '}
             <span className="italic font-serifAlt">Exceptional Service</span>
@@ -47,7 +47,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="font-body text-base sm:text-lg md:text-xl text-brand-bg/85 max-w-2xl mb-7 md:mb-10 font-light leading-relaxed"
+            className="font-body text-sm sm:text-base text-brand-bg/85 max-w-xl mb-5 md:mb-7 font-light leading-relaxed"
           >
             A premier academy dedicated to shaping the future leaders of the
             global luxury hospitality industry. Begin your journey toward
