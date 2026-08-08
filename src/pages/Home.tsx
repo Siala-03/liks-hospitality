@@ -243,55 +243,84 @@ export function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-24 md:py-32 bg-brand-bg">
+      <section className="py-20 md:py-28 bg-brand-primary">
         <div className="max-w-8xl mx-auto px-6 md:px-12">
-          <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-            <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
-              Tuition
-            </span>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-primary mb-6">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="font-body text-brand-ink/70 text-lg leading-relaxed">
-              One straightforward fee covers each course in full — no hidden costs, no extras.
-            </p>
-          </AnimatedSection>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          <AnimatedSection>
-            <div className="max-w-xl mx-auto bg-brand-primary rounded-3xl p-10 md:p-14 text-center text-brand-bg shadow-soft-lg">
+            {/* Left — price + headline */}
+            <AnimatedSection direction="right">
               <span className="font-button text-brand-accent tracking-widest uppercase text-sm mb-6 block">
-                Per Course
+                Tuition
               </span>
-              <div className="flex items-end justify-center gap-3 mb-4">
-                <span className="font-display text-6xl md:text-7xl font-medium">450,000</span>
-                <span className="font-button text-2xl text-brand-accent mb-2">RWF</span>
-              </div>
-              <p className="font-body text-brand-accent text-base leading-relaxed mb-10 max-w-sm mx-auto">
-                Covers all 7 courses. Includes tuition, practical training materials, and your LIKS certification upon completion.
+              <h2 className="font-display text-4xl md:text-5xl text-brand-bg leading-tight mb-6">
+                Simple,{' '}
+                <span className="italic font-serifAlt">Transparent</span>{' '}
+                Pricing
+              </h2>
+              <p className="font-body text-brand-accent text-lg leading-relaxed mb-10">
+                One straightforward fee per course — no hidden costs, no extras.
+                Everything you need to begin your career in luxury hospitality.
               </p>
-              <div className="space-y-3 mb-10 text-left max-w-xs mx-auto">
-                {[
-                  'Full course tuition',
-                  'Hands-on practical training',
-                  'LIKS certification',
-                  'Career placement support',
-                  'Industry internship access',
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3 font-body text-brand-accent/90">
-                    <span className="w-5 h-5 rounded-full bg-brand-bg/20 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3 h-3 text-brand-bg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                    {item}
-                  </div>
-                ))}
+              <div className="flex items-baseline gap-3 mb-2">
+                <span className="font-display text-7xl md:text-8xl font-medium text-brand-bg">450K</span>
+                <span className="font-button text-xl text-brand-accent">RWF</span>
               </div>
-              <Button href="/register" size="lg" className="bg-brand-bg text-brand-primary hover:bg-brand-accent w-full">
+              <p className="font-body text-brand-accent/70 text-sm mb-10 tracking-wide">
+                per course &nbsp;·&nbsp; 7 courses available
+              </p>
+              <Button
+                href="/register"
+                size="lg"
+                className="bg-brand-bg text-brand-primary hover:bg-brand-accent"
+              >
                 Register Interest
               </Button>
-            </div>
-          </AnimatedSection>
+            </AnimatedSection>
+
+            {/* Right — inclusions card + course pills */}
+            <AnimatedSection direction="left" delay={0.2}>
+              <div className="bg-[#5a3230] rounded-3xl p-8 md:p-10 border border-[#7a4542]">
+                <h3 className="font-display text-2xl text-brand-bg mb-6">
+                  What's Included
+                </h3>
+                <div className="space-y-4 mb-8">
+                  {[
+                    'Full course tuition',
+                    'Hands-on practical training',
+                    'LIKS certification upon completion',
+                    'Career placement support',
+                    'Industry internship access',
+                  ].map((item) => (
+                    <div key={item} className="flex items-center gap-3 font-body text-brand-accent/90">
+                      <span className="w-5 h-5 rounded-full bg-brand-bg/15 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-brand-bg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      {item}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="border-t border-brand-bg/10 pt-6">
+                  <p className="font-button text-xs tracking-widest uppercase text-brand-accent mb-4">
+                    Available Courses
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {courses.map((course) => (
+                      <span
+                        key={course.id}
+                        className="bg-brand-bg/10 text-brand-bg/80 text-xs font-button px-3 py-1.5 rounded-full border border-brand-bg/10 hover:bg-brand-bg/20 transition-colors"
+                      >
+                        {course.title}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+          </div>
         </div>
       </section>
 
