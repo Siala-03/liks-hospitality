@@ -17,14 +17,14 @@ export function Home() {
   const featuredCourses = courses.slice(0, 3);
 
   return (
-    <div className="w-full">
+    <div className="w-full -mt-28 md:-mt-32">
       {/* Hero Section */}
       <section className="relative h-[85vh] md:h-[90vh] min-h-[550px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/mixology.jpg"
             alt="LIKS mixology and bartending training in action"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-left"
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-brand-ink/40 mix-blend-multiply" />
@@ -38,7 +38,7 @@ export function Home() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-6 md:mb-8 max-w-5xl px-2 sm:px-0"
           >
-            Master the Art of{' '}
+            The Art of{' '}
             <span className="italic font-serifAlt">Exceptional Service</span>
           </motion.h1>
 
@@ -72,7 +72,7 @@ export function Home() {
               size="lg"
               className="border-brand-bg text-brand-bg hover:bg-brand-bg hover:text-brand-primary"
             >
-              Explore Programmes
+              Explore Courses
             </Button>
           </motion.div>
         </div>
@@ -83,10 +83,10 @@ export function Home() {
         <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 text-center">
             {[
-              { number: '7', label: 'Programmes' },
+              { number: '7', label: 'Courses' },
               { number: '95%', label: 'Job Placement After Graduation' },
-              { number: '100%', label: 'English Instruction' },
-              { number: 'Kigali', label: 'Rwanda' },
+              { number: '450K', label: 'RWF per Course' },
+              { number: 'English', label: 'Instruction' },
             ].map((stat, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1} direction="up">
                 <div className="text-brand-bg">
@@ -241,16 +241,69 @@ export function Home() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="py-24 md:py-32 bg-brand-bg">
+        <div className="max-w-8xl mx-auto px-6 md:px-12">
+          <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
+            <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
+              Tuition
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl text-brand-primary mb-6">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="font-body text-brand-ink/70 text-lg leading-relaxed">
+              One straightforward fee covers each course in full — no hidden costs, no extras.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="max-w-xl mx-auto bg-brand-primary rounded-3xl p-10 md:p-14 text-center text-brand-bg shadow-soft-lg">
+              <span className="font-button text-brand-accent tracking-widest uppercase text-sm mb-6 block">
+                Per Course
+              </span>
+              <div className="flex items-end justify-center gap-3 mb-4">
+                <span className="font-display text-6xl md:text-7xl font-medium">450,000</span>
+                <span className="font-button text-2xl text-brand-accent mb-2">RWF</span>
+              </div>
+              <p className="font-body text-brand-accent text-base leading-relaxed mb-10 max-w-sm mx-auto">
+                Covers all 7 courses. Includes tuition, practical training materials, and your LIKS certification upon completion.
+              </p>
+              <div className="space-y-3 mb-10 text-left max-w-xs mx-auto">
+                {[
+                  'Full course tuition',
+                  'Hands-on practical training',
+                  'LIKS certification',
+                  'Career placement support',
+                  'Industry internship access',
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3 font-body text-brand-accent/90">
+                    <span className="w-5 h-5 rounded-full bg-brand-bg/20 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-3 h-3 text-brand-bg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    {item}
+                  </div>
+                ))}
+              </div>
+              <Button href="/register" size="lg" className="bg-brand-bg text-brand-primary hover:bg-brand-accent w-full">
+                Register Interest
+              </Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Featured Courses */}
       <section className="py-24 md:py-32 bg-brand-bg">
         <div className="max-w-8xl mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <AnimatedSection>
               <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
-                Programmes
+                Courses
               </span>
               <h2 className="font-display text-4xl md:text-5xl text-brand-primary mb-4">
-                Our Programmes
+                Our Courses
               </h2>
               <p className="font-body text-brand-ink/70 text-lg max-w-xl">
                 Comprehensive, industry-aligned training designed for the modern
@@ -259,7 +312,7 @@ export function Home() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <Button href="/courses" variant="outline">
-                View All Programmes
+                View All Courses
               </Button>
             </AnimatedSection>
           </div>

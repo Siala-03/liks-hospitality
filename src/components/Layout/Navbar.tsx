@@ -46,7 +46,7 @@ export function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isTransparent
             ? 'bg-brand-primary/95 lg:bg-transparent py-4 lg:py-6'
-            : 'bg-brand-primary/95 backdrop-blur-md shadow-sm py-4'
+            : 'bg-brand-primary/95 backdrop-blur-md py-4'
         }`}
       >
         <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
@@ -55,7 +55,7 @@ export function Navbar() {
               src="/logo.png"
               alt="LIKS Hospitality Academy"
               className={`w-auto transition-all duration-500 ${
-                isTransparent ? 'h-12 lg:h-16 lg:md:h-20' : 'h-11 md:h-12'
+                isTransparent ? 'h-16 lg:h-20' : 'h-14 md:h-16'
               }`}
             />
           </Link>
