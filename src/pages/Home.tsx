@@ -24,7 +24,7 @@ export function Home() {
           <img
             src="/mixology.jpg"
             alt="LIKS mixology and bartending training in action"
-            className="w-full h-full object-cover object-left"
+            className="w-full h-full object-cover object-left-top"
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-brand-ink/40 mix-blend-multiply" />
