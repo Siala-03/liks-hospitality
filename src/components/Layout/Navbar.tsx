@@ -22,7 +22,6 @@ export function Navbar() {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isMobileMenuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
@@ -45,8 +44,8 @@ export function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isTransparent
-            ? 'bg-brand-primary/95 lg:bg-transparent py-4 lg:py-6'
-            : 'bg-brand-primary/95 backdrop-blur-md py-4'
+            ? 'bg-white lg:bg-transparent py-4 lg:py-6'
+            : 'bg-white/95 backdrop-blur-md border-b border-brand-accent/20 py-4'
         }`}
       >
         <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
@@ -55,7 +54,9 @@ export function Navbar() {
               src="/logo.png"
               alt="LIKS Hospitality Academy"
               className={`w-auto transition-all duration-500 ${
-                isTransparent ? 'h-16 lg:h-20' : 'h-14 md:h-16'
+                isTransparent
+                  ? 'h-16 lg:h-20 brightness-0 lg:brightness-100'
+                  : 'h-14 md:h-16 brightness-0'
               }`}
             />
           </Link>
@@ -67,30 +68,42 @@ export function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={`font-button text-sm font-medium transition-colors relative py-1 ${
-                  isActive(link.path)
-                    ? 'text-brand-bg'
-                    : 'text-brand-accent hover:text-brand-bg'
+                  isTransparent
+                    ? isActive(link.path)
+                      ? 'text-brand-bg'
+                      : 'text-brand-bg/80 hover:text-brand-bg'
+                    : isActive(link.path)
+                    ? 'text-brand-primary'
+                    : 'text-brand-ink/70 hover:text-brand-primary'
                 }`}
               >
                 {link.name}
                 {isActive(link.path) ? (
                   <motion.span
                     layoutId="nav-underline"
-                    className="absolute -bottom-1 left-0 right-0 h-[2px] bg-brand-bg rounded-full"
+                    className={`absolute -bottom-1 left-0 right-0 h-[2px] rounded-full ${
+                      isTransparent ? 'bg-brand-bg' : 'bg-brand-primary'
+                    }`}
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 ) : (
-                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-bg/60 transition-all duration-300 hover:w-full" />
+                  <span className={`absolute -bottom-1 left-0 w-0 h-[1px] transition-all duration-300 hover:w-full ${
+                    isTransparent ? 'bg-brand-bg/60' : 'bg-brand-primary/40'
+                  }`} />
                 )}
               </Link>
             ))}
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="ghost" href="/contact" className="text-brand-accent hover:text-brand-bg">
+            <Button
+              variant="ghost"
+              href="/contact"
+              className={isTransparent ? 'text-brand-bg/80 hover:text-brand-bg' : 'text-brand-ink/70 hover:text-brand-primary'}
+            >
               Contact
             </Button>
-            <Button href="/register" className="bg-brand-bg text-brand-primary hover:bg-brand-accent">
+            <Button href="/register">
               Register Interest
             </Button>
           </div>
@@ -98,7 +111,7 @@ export function Navbar() {
           {/* Hamburger — mobile only */}
           <button
             aria-label="Open menu"
-            className="lg:hidden p-2 -mr-1 text-brand-bg"
+            className="lg:hidden p-2 -mr-1 text-brand-primary"
             onClick={() => setIsMobileMenuOpen(true)}
           >
             <Menu size={26} />
@@ -106,7 +119,7 @@ export function Navbar() {
         </div>
       </header>
 
-      {/* ── Mobile menu overlay — sibling of header, z-index above it ── */}
+      {/* ── Mobile menu overlay ── */}
       <div
         className={`
           fixed inset-0 z-[60] bg-brand-bg flex flex-col lg:hidden
@@ -114,7 +127,6 @@ export function Navbar() {
           ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
       >
-        {/* Top bar inside the overlay */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-brand-accent/20">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
             <img src="/logo.png" alt="LIKS Hospitality Academy" className="h-10 w-auto brightness-0" />
@@ -128,7 +140,6 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Nav links */}
         <nav className="flex flex-col px-6 pt-4 overflow-y-auto flex-1">
           {[...navLinks, { name: 'Contact', path: '/contact' }].map((link) => (
             <Link
@@ -145,7 +156,6 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* CTA */}
         <div className="px-6 py-8">
           <Button href="/register" className="w-full" size="lg">
             Register Interest
