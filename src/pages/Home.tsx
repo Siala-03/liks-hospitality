@@ -32,7 +32,7 @@ export function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-brand-ink/85 to-transparent" />
 
         {/* Text pinned to bottom */}
-        <div className="absolute bottom-0 left-0 right-0 w-full max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center pb-10 md:pb-16">
+        <div className="absolute bottom-0 left-0 right-0 w-full max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center pb-4 md:pb-6">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
