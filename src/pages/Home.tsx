@@ -62,7 +62,7 @@ export function Home() {
           >
             <Button
               href="/register"
-              size="lg"
+              size="sm"
               className="bg-brand-bg text-brand-primary hover:bg-brand-accent"
             >
               Secure Your Place
@@ -70,7 +70,7 @@ export function Home() {
             <Button
               href="/courses"
               variant="outline"
-              size="lg"
+              size="sm"
               className="border-brand-bg text-brand-bg hover:bg-brand-bg hover:text-brand-primary"
             >
               Explore Courses
