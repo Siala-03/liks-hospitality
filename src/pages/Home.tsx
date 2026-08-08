@@ -19,7 +19,7 @@ export function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[85vh] md:h-[90vh] min-h-[550px] w-full flex items-end justify-center overflow-hidden">
+      <section className="relative h-[55vh] md:h-[65vh] min-h-[400px] w-full flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/mixology.jpg"
