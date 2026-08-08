@@ -1,31 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-
-  const isHome = location.pathname === '/';
-  const isTransparent = isHome && !isScrolled;
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location.pathname]);
-
-  useEffect(() => {
-    document.body.style.overflow = isMobileMenuOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
-  }, [isMobileMenuOpen]);
 
   const navLinks = [
     { name: 'About', path: '/about' },
@@ -38,24 +19,25 @@ export function Navbar() {
   const isActive = (path: string) =>
     location.pathname === path || location.pathname.startsWith(path + '/');
 
+  React.useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  React.useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isMobileMenuOpen]);
+
   return (
     <>
-      {/* ── Main header bar ── */}
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isTransparent
-            ? 'bg-white lg:bg-transparent py-4 lg:py-6'
-            : 'bg-white/95 backdrop-blur-md border-b border-brand-accent/20 py-4'
-        }`}
-      >
+      {/* ── Header ── */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-brand-accent/20 py-4">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
           <Link to="/" className="flex-shrink-0">
             <img
               src="/logo.png"
               alt="LIKS Hospitality Academy"
-              className={`w-auto transition-all duration-500 ${
-                isTransparent ? 'h-16 lg:h-20' : 'h-14 md:h-16'
-              }`}
+              className="h-14 md:h-16 w-auto"
             />
           </Link>
 
@@ -66,47 +48,31 @@ export function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={`font-button text-sm font-medium transition-colors relative py-1 ${
-                  isTransparent
-                    ? isActive(link.path)
-                      ? 'text-brand-bg'
-                      : 'text-brand-bg/80 hover:text-brand-bg'
-                    : isActive(link.path)
+                  isActive(link.path)
                     ? 'text-brand-primary'
                     : 'text-brand-ink/70 hover:text-brand-primary'
                 }`}
               >
                 {link.name}
-                {isActive(link.path) ? (
+                {isActive(link.path) && (
                   <motion.span
                     layoutId="nav-underline"
-                    className={`absolute -bottom-1 left-0 right-0 h-[2px] rounded-full ${
-                      isTransparent ? 'bg-brand-bg' : 'bg-brand-primary'
-                    }`}
+                    className="absolute -bottom-1 left-0 right-0 h-[2px] bg-brand-primary rounded-full"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
-                ) : (
-                  <span className={`absolute -bottom-1 left-0 w-0 h-[1px] transition-all duration-300 hover:w-full ${
-                    isTransparent ? 'bg-brand-bg/60' : 'bg-brand-primary/40'
-                  }`} />
                 )}
               </Link>
             ))}
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Button
-              variant="ghost"
-              href="/contact"
-              className={isTransparent ? 'text-brand-bg/80 hover:text-brand-bg' : 'text-brand-ink/70 hover:text-brand-primary'}
-            >
+            <Button variant="ghost" href="/contact" className="text-brand-ink/70 hover:text-brand-primary">
               Contact
             </Button>
-            <Button href="/register">
-              Register Interest
-            </Button>
+            <Button href="/register">Register Interest</Button>
           </div>
 
-          {/* Hamburger — mobile only */}
+          {/* Hamburger */}
           <button
             aria-label="Open menu"
             className="lg:hidden p-2 -mr-1 text-brand-primary"
@@ -119,11 +85,9 @@ export function Navbar() {
 
       {/* ── Mobile menu overlay ── */}
       <div
-        className={`
-          fixed inset-0 z-[60] bg-brand-bg flex flex-col lg:hidden
-          transition-transform duration-500 ease-out-expo
-          ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
-        `}
+        className={`fixed inset-0 z-[60] bg-brand-bg flex flex-col lg:hidden transition-transform duration-500 ease-out-expo ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
       >
         <div className="flex items-center justify-between px-6 py-4 border-b border-brand-accent/20">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>

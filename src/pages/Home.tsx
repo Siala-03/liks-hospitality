@@ -17,7 +17,7 @@ export function Home() {
   const featuredCourses = courses.slice(0, 3);
 
   return (
-    <div className="w-full -mt-28 md:-mt-32">
+    <div className="w-full">
       {/* Hero Section */}
       <section className="relative h-[85vh] md:h-[90vh] min-h-[550px] w-full flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
