@@ -18,24 +18,26 @@ export function Home() {
 
   return (
     <div className="w-full">
-      {/* Hero Image */}
-      <section className="w-full h-[65vh] md:h-[75vh] min-h-[400px] overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative h-[88vh] md:h-[92vh] min-h-[600px] w-full overflow-hidden">
+        {/* Image */}
         <img
           src="/mixology.jpg"
           alt="LIKS mixology and bartending training in action"
-          className="w-full h-full object-cover object-left-top"
+          className="absolute inset-0 w-full h-full object-cover object-left-top"
           fetchPriority="high"
         />
-      </section>
 
-      {/* Hero Text */}
-      <section className="bg-brand-bg py-14 md:py-20">
-        <div className="max-w-8xl mx-auto px-6 md:px-12 text-center flex flex-col items-center">
+        {/* Gradient only at the bottom so the focal area stays clear */}
+        <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-brand-ink/85 to-transparent" />
+
+        {/* Text pinned to bottom */}
+        <div className="absolute bottom-0 left-0 right-0 w-full max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center pb-10 md:pb-16">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-6 md:mb-8 max-w-5xl text-brand-primary"
+            transition={{ duration: 1, delay: 0.4 }}
+            className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-4 md:mb-6 max-w-5xl"
           >
             The Art of{' '}
             <span className="italic font-serifAlt">Exceptional Service</span>
@@ -44,8 +46,8 @@ export function Home() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-body text-base sm:text-lg md:text-xl text-brand-ink/70 max-w-2xl mb-8 md:mb-12 font-light leading-relaxed"
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="font-body text-base sm:text-lg md:text-xl text-brand-bg/85 max-w-2xl mb-7 md:mb-10 font-light leading-relaxed"
           >
             A premier academy dedicated to shaping the future leaders of the
             global luxury hospitality industry. Begin your journey toward
@@ -55,13 +57,22 @@ export function Home() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button href="/register" size="lg">
+            <Button
+              href="/register"
+              size="lg"
+              className="bg-brand-bg text-brand-primary hover:bg-brand-accent"
+            >
               Secure Your Place
             </Button>
-            <Button href="/courses" variant="outline" size="lg">
+            <Button
+              href="/courses"
+              variant="outline"
+              size="lg"
+              className="border-brand-bg text-brand-bg hover:bg-brand-bg hover:text-brand-primary"
+            >
               Explore Courses
             </Button>
           </motion.div>
