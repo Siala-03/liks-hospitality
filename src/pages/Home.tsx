@@ -18,25 +18,24 @@ export function Home() {
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <section className="relative h-[75vh] md:h-[80vh] min-h-[500px] w-full flex items-end justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/mixology.jpg"
-            alt="LIKS mixology and bartending training in action"
-            className="w-full h-full object-cover object-left-top"
-            fetchPriority="high"
-          />
-          <div className="absolute inset-0 bg-brand-ink/40 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/90 via-brand-ink/20 to-transparent" />
-        </div>
+      {/* Hero Image */}
+      <section className="w-full h-[65vh] md:h-[75vh] min-h-[400px] overflow-hidden">
+        <img
+          src="/mixology.jpg"
+          alt="LIKS mixology and bartending training in action"
+          className="w-full h-full object-cover object-left-top"
+          fetchPriority="high"
+        />
+      </section>
 
-        <div className="relative z-10 w-full max-w-8xl mx-auto px-6 md:px-12 text-center text-brand-bg flex flex-col items-center pb-16 md:pb-24">
+      {/* Hero Text */}
+      <section className="bg-brand-bg py-14 md:py-20">
+        <div className="max-w-8xl mx-auto px-6 md:px-12 text-center flex flex-col items-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-6 md:mb-8 max-w-5xl px-2 sm:px-0"
+            transition={{ duration: 1, delay: 0.2 }}
+            className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-6 md:mb-8 max-w-5xl text-brand-primary"
           >
             The Art of{' '}
             <span className="italic font-serifAlt">Exceptional Service</span>
@@ -45,8 +44,8 @@ export function Home() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="font-body text-base sm:text-lg md:text-xl text-brand-bg/90 max-w-2xl mb-8 md:mb-12 font-light leading-relaxed px-2 sm:px-0"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="font-body text-base sm:text-lg md:text-xl text-brand-ink/70 max-w-2xl mb-8 md:mb-12 font-light leading-relaxed"
           >
             A premier academy dedicated to shaping the future leaders of the
             global luxury hospitality industry. Begin your journey toward
@@ -56,22 +55,13 @@ export function Home() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button
-              href="/register"
-              size="lg"
-              className="bg-brand-bg text-brand-primary hover:bg-brand-accent"
-            >
+            <Button href="/register" size="lg">
               Secure Your Place
             </Button>
-            <Button
-              href="/courses"
-              variant="outline"
-              size="lg"
-              className="border-brand-bg text-brand-bg hover:bg-brand-bg hover:text-brand-primary"
-            >
+            <Button href="/courses" variant="outline" size="lg">
               Explore Courses
             </Button>
           </motion.div>
