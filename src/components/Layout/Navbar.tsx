@@ -54,9 +54,7 @@ export function Navbar() {
               src="/logo.png"
               alt="LIKS Hospitality Academy"
               className={`w-auto transition-all duration-500 ${
-                isTransparent
-                  ? 'h-16 lg:h-20 brightness-0 lg:brightness-100'
-                  : 'h-14 md:h-16 brightness-0'
+                isTransparent ? 'h-16 lg:h-20' : 'h-14 md:h-16'
               }`}
             />
           </Link>
@@ -129,7 +127,7 @@ export function Navbar() {
       >
         <div className="flex items-center justify-between px-6 py-4 border-b border-brand-accent/20">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-            <img src="/logo.png" alt="LIKS Hospitality Academy" className="h-10 w-auto brightness-0" />
+            <img src="/logo.png" alt="LIKS Hospitality Academy" className="h-10 w-auto" />
           </Link>
           <button
             aria-label="Close menu"
