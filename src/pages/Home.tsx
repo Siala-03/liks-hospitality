@@ -87,7 +87,7 @@ export function Home() {
               { number: '7', label: 'Courses' },
               { number: '95%', label: 'Job Placement After Graduation' },
               { number: '450K', label: 'RWF per Course' },
-              { number: 'English', label: 'Instruction' },
+              { number: 'Instruction', label: 'in English' },
             ].map((stat, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1} direction="up">
                 <div className="text-brand-bg">
