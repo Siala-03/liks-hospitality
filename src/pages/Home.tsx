@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronRight, Star, Globe, BookOpen, Briefcase } from 'lucide-react';
@@ -86,7 +85,7 @@ export function Home() {
             {[
               { number: '7', label: 'Courses' },
               { number: '95%', label: 'Job Placement After Graduation' },
-              { number: '450K', label: 'RWF per Course' },
+              { number: '450K', label: 'RWF for All 7 Courses' },
               { number: 'Instruction', label: 'in English' },
             ].map((stat, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1} direction="up">
@@ -256,7 +255,7 @@ export function Home() {
                 Pricing
               </h2>
               <p className="font-body text-brand-accent text-lg leading-relaxed mb-10">
-                One straightforward fee per course — no hidden costs, no extras.
+                One bundled fee for all 7 courses — no hidden costs, no extras.
                 Everything you need to begin your career in luxury hospitality.
               </p>
               <div className="flex items-baseline gap-3 mb-2">
@@ -264,7 +263,7 @@ export function Home() {
                 <span className="font-button text-xl text-brand-accent">RWF</span>
               </div>
               <p className="font-body text-brand-accent/70 text-sm mb-10 tracking-wide">
-                per course &nbsp;·&nbsp; 7 courses available
+                for all 7 courses &nbsp;·&nbsp; one payment, full access
               </p>
               <Button
                 href="/register"
