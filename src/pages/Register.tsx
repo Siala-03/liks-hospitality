@@ -147,6 +147,58 @@ export function Register() {
                   </div>
 
                   <div className="space-y-2">
+                    <label className="font-button text-sm text-brand-ink/80">District / Location *</label>
+                    <select
+                      required
+                      name="district"
+                      className="w-full bg-brand-bg border border-brand-accent/50 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary transition-colors appearance-none"
+                    >
+                      <option value="">Select your district</option>
+                      <optgroup label="Kigali">
+                        <option>Gasabo</option>
+                        <option>Kicukiro</option>
+                        <option>Nyarugenge</option>
+                      </optgroup>
+                      <optgroup label="Northern Province">
+                        <option>Burera</option>
+                        <option>Gakenke</option>
+                        <option>Gicumbi</option>
+                        <option>Musanze</option>
+                        <option>Rulindo</option>
+                      </optgroup>
+                      <optgroup label="Southern Province">
+                        <option>Gisagara</option>
+                        <option>Huye</option>
+                        <option>Kamonyi</option>
+                        <option>Muhanga</option>
+                        <option>Nyamagabe</option>
+                        <option>Nyanza</option>
+                        <option>Nyaruguru</option>
+                        <option>Ruhango</option>
+                      </optgroup>
+                      <optgroup label="Eastern Province">
+                        <option>Bugesera</option>
+                        <option>Gatsibo</option>
+                        <option>Kayonza</option>
+                        <option>Kirehe</option>
+                        <option>Ngoma</option>
+                        <option>Nyagatare</option>
+                        <option>Rwamagana</option>
+                      </optgroup>
+                      <optgroup label="Western Province">
+                        <option>Karongi</option>
+                        <option>Ngororero</option>
+                        <option>Nyabihu</option>
+                        <option>Nyamasheke</option>
+                        <option>Rubavu</option>
+                        <option>Rusizi</option>
+                        <option>Rutsiro</option>
+                      </optgroup>
+                      <option value="Outside Rwanda">Outside Rwanda</option>
+                    </select>
+                  </div>
+
+                  <div className="space-y-2">
                     <label className="font-button text-sm text-brand-ink/80">Programme of Interest *</label>
                     <select
                       required
@@ -161,6 +213,19 @@ export function Register() {
                       ))}
                       <option value="Undecided">Undecided at this time</option>
                     </select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <label className="font-button text-sm text-brand-ink/80">
+                      CV / Resume <span className="text-brand-ink/40 font-normal">(optional)</span>
+                    </label>
+                    <input
+                      type="file"
+                      name="cv"
+                      accept=".pdf,.doc,.docx"
+                      className="w-full bg-brand-bg border border-brand-accent/50 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-primary transition-colors text-brand-ink/70 text-sm file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-button file:bg-brand-primary file:text-brand-bg hover:file:bg-brand-ink cursor-pointer"
+                    />
+                    <p className="text-xs text-brand-ink/40 font-body">PDF, DOC or DOCX — max 5 MB</p>
                   </div>
 
                   {error && (
