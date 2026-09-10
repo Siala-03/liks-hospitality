@@ -230,19 +230,37 @@ export function Contact() {
                         Phone
                       </h4>
                       <a
-                        href="tel:+250785023984"
+                        href="tel:+250782276007"
                         className="font-body text-brand-ink/70 hover:text-brand-primary transition-colors block"
                       >
-                        +250 785 023 984
+                        +250 782 276 007
                       </a>
                       <a
-                        href="https://wa.me/250785023984"
+                        href="https://wa.me/250782276007"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-body text-sm text-[#25D366] hover:text-[#128C7E] transition-colors mt-1 inline-block"
                       >
                         Chat on WhatsApp
                       </a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-white shadow-soft flex items-center justify-center text-brand-primary flex-shrink-0">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-button font-medium text-brand-ink mb-1">
+                        MoMo Payment
+                      </h4>
+                      <p className="font-body text-brand-ink/70">
+                        MoMo Code: <span className="font-medium text-brand-primary">000267</span>
+                      </p>
+                      <p className="font-body text-xs text-brand-ink/50 mt-0.5">
+                        MTN Mobile Money · LIKS Hospitality Academy
+                      </p>
                     </div>
                   </div>
                 </div>

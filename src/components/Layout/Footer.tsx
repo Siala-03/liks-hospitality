@@ -106,15 +106,15 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="tel:+250785023984"
+                    href="tel:+250782276007"
                     className="hover:text-white transition-colors"
                   >
-                    +250 785 023 984
+                    +250 782 276 007
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://wa.me/250785023984"
+                    href="https://wa.me/250782276007"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
