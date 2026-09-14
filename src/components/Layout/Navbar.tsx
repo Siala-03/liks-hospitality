@@ -9,6 +9,7 @@ export function Navbar() {
   const location = useLocation();
 
   const navLinks = [
+    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Courses', path: '/courses' },
     { name: 'Admissions', path: '/admissions' },
@@ -17,7 +18,9 @@ export function Navbar() {
   ];
 
   const isActive = (path: string) =>
-    location.pathname === path || location.pathname.startsWith(path + '/');
+    path === '/'
+      ? location.pathname === '/'
+      : location.pathname === path || location.pathname.startsWith(path + '/');
 
   React.useEffect(() => {
     setIsMobileMenuOpen(false);

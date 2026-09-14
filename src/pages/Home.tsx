@@ -265,7 +265,7 @@ export function Home() {
               <p className="font-body text-brand-accent/70 text-sm mb-4 tracking-wide">
                 for all 7 courses &nbsp;·&nbsp; one payment, full access
               </p>
-              <div className="inline-flex items-center gap-2 bg-brand-bg/10 border border-brand-bg/15 rounded-xl px-4 py-2.5 mb-10">
+              <div className="flex items-center gap-2 bg-brand-bg/10 border border-brand-bg/15 rounded-xl px-4 py-2.5 mb-6 w-fit">
                 <svg className="w-4 h-4 text-brand-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -273,13 +273,15 @@ export function Home() {
                   MoMo Code: <span className="font-medium text-brand-bg">0002276</span>
                 </span>
               </div>
-              <Button
-                href="/register"
-                size="lg"
-                className="bg-brand-bg text-brand-primary hover:bg-brand-accent"
-              >
-                Register Interest
-              </Button>
+              <div>
+                <Button
+                  href="/register"
+                  size="lg"
+                  className="bg-brand-bg text-brand-primary hover:bg-brand-accent"
+                >
+                  Register Interest
+                </Button>
+              </div>
             </AnimatedSection>
 
             {/* Right — inclusions card + course pills */}
