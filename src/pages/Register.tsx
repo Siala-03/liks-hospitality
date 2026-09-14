@@ -54,12 +54,19 @@ export function Register() {
                 Join the Next <br />
                 <span className="italic font-serifAlt">Intake</span>
               </h1>
-              <p className="font-body text-brand-ink/80 text-lg leading-relaxed mb-8">
+              <p className="font-body text-brand-ink/80 text-lg leading-relaxed mb-6">
                 The future of East African hospitality begins here. Register
                 your interest today to receive priority updates regarding
                 detailed programme schedules and exclusive
                 pre-enrollment opportunities.
               </p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                {['January', 'April', 'July', 'September'].map((month) => (
+                  <span key={month} className="bg-brand-primary/10 text-brand-primary font-button text-xs px-3 py-1.5 rounded-full">
+                    {month} Intake
+                  </span>
+                ))}
+              </div>
               <div className="grid grid-cols-2 gap-4 mt-12 hidden lg:grid">
                 <div className="relative h-64 rounded-3xl overflow-hidden shadow-soft-lg group">
                   <img

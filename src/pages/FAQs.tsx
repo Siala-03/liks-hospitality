@@ -5,6 +5,11 @@ import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { useSEO } from '../hooks/useSEO';
 const faqs = [
 {
+  question: 'When are the intake dates?',
+  answer:
+  'LIKS Hospitality Academy welcomes new students four times a year: January, April, July, and September. Each intake runs for 3 months of intensive training followed by a 1-month industry internship. We recommend registering your interest early as places are limited per cohort.'
+},
+{
   question: 'Is prior hospitality experience required to enroll?',
   answer:
   'For our foundational programmes, prior experience is not strictly required—what we seek is an undeniable passion for service and a commitment to excellence. However, advanced programmes, such as Hospitality Leadership, do require previous industry experience or relevant academic qualifications to ensure the cohort can engage with complex strategic material.'

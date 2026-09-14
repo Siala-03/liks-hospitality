@@ -173,8 +173,45 @@ export function Admissions() {
         </div>
       </section>
 
+      {/* Intake Dates */}
+      <section className="py-16 md:py-20 px-6 md:px-12 max-w-8xl mx-auto">
+        <AnimatedSection className="text-center max-w-2xl mx-auto mb-12">
+          <span className="font-button text-brand-secondary tracking-widest uppercase text-sm mb-4 block">
+            Intake Schedule
+          </span>
+          <h2 className="font-display text-3xl md:text-4xl text-brand-primary mb-4">
+            When Can You Start?
+          </h2>
+          <p className="font-body text-brand-ink/70 leading-relaxed">
+            We welcome new students four times a year. Choose the intake that works best for you.
+          </p>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto">
+          {[
+            { month: 'January', season: 'New Year Intake' },
+            { month: 'April', season: 'Mid-Year Intake' },
+            { month: 'July', season: 'Mid-Year Intake' },
+            { month: 'September', season: 'Term 3 Intake' },
+          ].map((intake, idx) => (
+            <AnimatedSection key={intake.month} delay={idx * 0.1}>
+              <div className="bg-white rounded-2xl p-6 text-center shadow-soft border border-brand-accent/20 hover:border-brand-primary/30 transition-colors">
+                <span className="font-display text-4xl text-brand-primary block mb-2">{intake.month}</span>
+                <span className="font-button text-xs tracking-widest uppercase text-brand-secondary">{intake.season}</span>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+
+        <AnimatedSection className="text-center mt-8">
+          <p className="font-body text-brand-ink/50 text-sm">
+            Course duration: 3 months of training + 1 month industry internship.
+          </p>
+        </AnimatedSection>
+      </section>
+
       {/* Full Width Banner */}
-      <section className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden mt-16">
+      <section className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="/cafe service.jpg"
