@@ -256,7 +256,7 @@ export function Contact() {
                         MoMo Payment
                       </h4>
                       <p className="font-body text-brand-ink/70">
-                        MoMo Code: <span className="font-medium text-brand-primary">000267</span>
+                        MoMo Code: <span className="font-medium text-brand-primary">0002276</span>
                       </p>
                       <p className="font-body text-xs text-brand-ink/50 mt-0.5">
                         MTN Mobile Money · LIKS Hospitality Academy
