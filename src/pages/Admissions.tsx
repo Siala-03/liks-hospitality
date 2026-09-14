@@ -131,29 +131,31 @@ export function Admissions() {
                 <li className="flex items-start gap-4">
                   <span className="w-2 h-2 rounded-full bg-brand-primary mt-2.5 flex-shrink-0" />
                   <span>
-                    A profound, demonstrable passion for service and
-                    uncompromising excellence.
+                    High School Diploma (or equivalent).
                   </span>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="w-2 h-2 rounded-full bg-brand-primary mt-2.5 flex-shrink-0" />
                   <span>
-                    A high school diploma or equivalent (required for most
-                    foundational programmes).
+                    Minimum age of <strong>18 years</strong> at the time of enrollment.
                   </span>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="w-2 h-2 rounded-full bg-brand-primary mt-2.5 flex-shrink-0" />
                   <span>
-                    Professional proficiency in English, the primary language of
-                    instruction and global hospitality.
+                    Proficiency in English — all courses are delivered in English.
                   </span>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="w-2 h-2 rounded-full bg-brand-primary mt-2.5 flex-shrink-0" />
                   <span>
-                    Exceptional interpersonal skills, emotional intelligence,
-                    and a collaborative mindset.
+                    A genuine passion for service and a collaborative mindset.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="w-2 h-2 rounded-full bg-brand-primary mt-2.5 flex-shrink-0" />
+                  <span>
+                    A non-refundable admission fee of <strong>RWF 15,000</strong> is required for the interview and enrollment process.
                   </span>
                 </li>
               </ul>

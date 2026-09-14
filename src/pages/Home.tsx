@@ -83,9 +83,9 @@ export function Home() {
         <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 text-center">
             {[
-              { number: '7', label: 'Courses' },
+              { number: '3', label: 'Courses' },
               { number: '95%', label: 'Job Placement After Graduation' },
-              { number: '450K', label: 'RWF for All 7 Courses' },
+              { number: '450K', label: 'RWF for All 3 Courses' },
               { number: 'Instruction', label: 'in English' },
             ].map((stat, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.1} direction="up">
@@ -250,21 +250,34 @@ export function Home() {
                 Tuition
               </span>
               <h2 className="font-display text-4xl md:text-5xl text-brand-bg leading-tight mb-6">
-                Simple,{' '}
-                <span className="italic font-serifAlt">Transparent</span>{' '}
+                Clear,{' '}
+                <span className="italic font-serifAlt">Flexible</span>{' '}
                 Pricing
               </h2>
-              <p className="font-body text-brand-accent text-lg leading-relaxed mb-10">
-                One bundled fee for all 7 courses — no hidden costs, no extras.
-                Everything you need to begin your career in luxury hospitality.
+              <p className="font-body text-brand-accent text-lg leading-relaxed mb-8">
+                Transparent, flexible pricing across our 3 available courses —
+                choose the combination that fits your goals.
               </p>
-              <div className="flex items-baseline gap-3 mb-2">
-                <span className="font-display text-7xl md:text-8xl font-medium text-brand-bg">450K</span>
-                <span className="font-button text-xl text-brand-accent">RWF</span>
+
+              {/* Pricing tiers */}
+              <div className="space-y-3 mb-6">
+                {[
+                  { label: 'All 3 Courses (Full Bundle)', price: '450,000' },
+                  { label: 'Mixology & Service Excellence', price: '300,000' },
+                  { label: 'Barista & Service Excellence', price: '250,000' },
+                ].map((tier) => (
+                  <div key={tier.label} className="flex items-center justify-between bg-brand-bg/10 border border-brand-bg/10 rounded-2xl px-5 py-3.5">
+                    <span className="font-body text-brand-accent text-sm">{tier.label}</span>
+                    <span className="font-display text-xl text-brand-bg font-medium whitespace-nowrap ml-4">{tier.price} <span className="font-button text-xs text-brand-accent">RWF</span></span>
+                  </div>
+                ))}
               </div>
-              <p className="font-body text-brand-accent/70 text-sm mb-4 tracking-wide">
-                for all 7 courses &nbsp;·&nbsp; one payment, full access
+
+              {/* Admission fee note */}
+              <p className="font-body text-brand-accent/60 text-xs mb-6 leading-relaxed">
+                * A non-refundable admission fee of <span className="text-brand-bg/80">RWF 15,000</span> applies for interviews &amp; enrollment.
               </p>
+
               <div className="flex items-center gap-2 bg-brand-bg/10 border border-brand-bg/15 rounded-xl px-4 py-2.5 mb-6 w-fit">
                 <svg className="w-4 h-4 text-brand-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
